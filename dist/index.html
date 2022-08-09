@@ -9,6 +9,52 @@
         <link rel="shortcut icon" href="./4geeks.ico"></head>
     <body class="h-100">
         <div id="app" class="h-100"></div>
+        <div class="panel">
+            <div class="result">
+    
+            </div>
+            <div class="question-container" id="question">
+                Question goes here.
+            </div>
+            <div class="option-container">
+                <button class="option" onclick="" id="op1" >option1</button>
+        
+                <button class="option" id="op2" >option2</button>
+        
+                <button class="option" id="op3">option3</button>
+        
+                <button class="option" id="op4">option4</button>
+            </div>
+            <div class="navigation">
+                <button class="evaluate">Evaluate</button>
+                <button class="next">Next</button>
+            </div>
+        </div>
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+          
+            // Your web app's Firebase configuration
+            const firebaseConfig = {
+              apiKey: "AIzaSyAPFz-fs52mSxLWgZtRqTzjLVj6BLQ-0MU",
+              authDomain: "quizapp-6f202.firebaseapp.com",
+              projectId: "quizapp-6f202",
+              storageBucket: "quizapp-6f202.appspot.com",
+              messagingSenderId: "849014910616",
+              appId: "1:849014910616:web:e46160d7fb5b3dffad2aed"
+            };
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+          </script>
+        <script src="Quiz.js"></script>
         <script type="text/javascript" src="./bundle.js"></script>
     </body>
 </html>
+
+
+
+
+	
