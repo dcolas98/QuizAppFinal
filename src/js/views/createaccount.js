@@ -83,6 +83,7 @@ import { useAuth } from "/workspace/react-hello-webapp/src/contexts/AuthContext.
 import { Link, useHistory } from "react-router-dom";
 import { AuthProvider } from '/workspace/react-hello-webapp/src/contexts/AuthContext.js';
 
+
 export const Signup = () => {
   const emailRef = useRef();
   const passwordRef = useRef();
@@ -149,6 +150,8 @@ export const Signup = () => {
     </>
   );
 };
+
+// Add a new document with a generated id.
 
 
 

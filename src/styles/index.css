@@ -1,3 +1,129 @@
 /* 
     General Styles
 */
+
+/* 
+    General Styles
+*/
+body{
+    background: #a89ef2;
+}
+.appWords{
+    margin-bottom: 30px;
+}
+.login{
+    box-sizing: border-box;
+
+position: absolute;
+width: 627px;
+height: 710px;
+left: 443px;
+top: 136px;
+
+background: #C7FDE5;
+border: 1px solid #000000;
+border-radius: 200px;
+}
+
+.logo{
+    position: relative;
+    width: 216px;
+    height: 147px;    
+    left: 93px;
+    margin-bottom: 25px;
+}
+.vecRed{
+    position: absolute;
+left: 2.05%;
+right: 59.62%;
+top: 73.36%;
+bottom: -42.06%;
+
+background: #E3073C;
+/* transform: matrix(1, 0 , 0, -1, 0, 0); */
+}
+.vecYellow{
+    position: absolute;
+left: 21.24%;
+right: 40.43%;
+top: 93.54%;
+bottom: -62.25%;
+
+background: #FFD200;
+/* transform: matrix(1, 0, 0, -1, 0, 0); */
+}
+.vecGreen{
+    position: absolute;
+left: 40.43%;
+right: 21.24%;
+top: 73.35%;
+bottom: -42.05%;
+
+background: #06E07F;
+/* transform: matrix(1, 0, 0, -1, 0, 0); */
+}
+.vecBlue{
+    position: absolute;
+left: 59.62%;
+right: 2.05%;
+top: 93.53%;
+bottom: -62.24%;
+
+background: #1F84EF;
+/* transform: matrix(1, 0, 0, -1, 0, 0); */
+}
+.emailRec{
+    position: absolute;
+width: 423px;
+height: 75px;
+left: 526px;
+top: 387px;
+
+background: #FFFFFF;
+border-radius: 200px;
+}
+.pwInput{
+background: #FFFFFF;
+border-radius: 0px 200px 200px 0px;
+width: 400px;
+margin: auto;
+}
+.emInput{
+    background: #FFFFFF;
+    border-radius: 0px 200px 200px 0px;
+    width: 400px;
+    margin: auto;
+    height: 39px;
+}
+
+.loginbut{
+background: #4999EE;
+border-radius: 200px;
+}
+.emailCircle{
+    position: absolute;
+    width: 43px;
+    height: 40px;
+    left: 102px;
+    top: 236px;    
+    background: #FF0000;
+    border-radius: 200px;
+}
+
+.pwSquare{
+    position: absolute;
+    width: 42px;
+    height: 38px;
+    left: 103px;
+    bottom: 355px;
+    background: #FFD200;
+}
+
+.img1{
+    height: 300px;
+    width: 150px;
+
+}
+.bg-lightGreen{
+    background-color: #09F209;
+}
