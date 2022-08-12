@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react"
 import { Form, Button, Card, Alert } from "react-bootstrap"
-import { useAuth } from "/workspace/react-hello-webapp/src/contexts/AuthContext.js"
+import { useAuth } from "src/contexts/AuthContext.js"
 import { Link, useHistory } from "react-router-dom"
 
 

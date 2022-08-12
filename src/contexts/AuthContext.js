@@ -78,7 +78,7 @@
 
 import React, { useContext, useState, useEffect } from "react";
 import { createContext } from "react";
-import { auth } from "/workspace/react-hello-webapp/src/js/firebaseConfig.js";
+import { auth } from "src/js/firebaseConfig.js";
 
 const AuthContext = createContext();
 
