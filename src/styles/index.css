@@ -5,6 +5,11 @@
 /* 
     General Styles
 */
+
+Card{
+    background-color: #06E07F;
+}
+
 body{
     background: #a89ef2;
 }

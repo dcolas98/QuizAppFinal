@@ -26,6 +26,7 @@
 //   );
 // };
 
+//Hard Code Questions
 import React, { useState } from 'react';
 
 export const Quiz = () => {

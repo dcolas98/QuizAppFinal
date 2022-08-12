@@ -7,7 +7,7 @@ export const UserHome = () => {
     return (
 <div> 
 < Link to="/quiz">
-<button type="submit" className="btn btn-primary mt-2">Quiz 1</button>
+<button type="submit" className="btn btn-primary mt-2">Start Quiz!</button>
 </Link>
 </div>
 )};
