@@ -79,9 +79,9 @@
 import React, { useRef, useState } from "react";
 import { Card, Button, Form, Alert } from "react-bootstrap";
 import InputFields from "../component/InputFields.jsx";
-import { useAuth } from "src/contexts/AuthContext.js";
+import { useAuth } from "/workspace/react-hello-webapp/src/contexts/AuthContext.js";
 import { Link, useHistory } from "react-router-dom";
-import { AuthProvider } from 'src/contexts/AuthContext.js';
+import { AuthProvider } from '/workspace/react-hello-webapp/src/contexts/AuthContext.js';
 
 
 
