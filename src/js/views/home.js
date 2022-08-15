@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react"
 import { Form, Button, Card, Alert } from "react-bootstrap"
-import { useAuth } from "/workspace/react-hello-webapp/src/contexts/AuthContext.js"
+import { useAuth } from "/workspace/QuizAppFinal/src/contexts/AuthContext.js"
 import { Link, useHistory } from "react-router-dom"
 
 
@@ -29,27 +29,29 @@ export function Home() {
 
   return (
     <>
-      <Card>
-        <Card.Body>
-          <h2 className="text-center mb-4">Log In</h2>
+    <div className="bg bg bg2 bg bg3 text-center mt-5"></div>
+      <Card className="login">
+        <Card.Body >
           {error && <Alert variant="danger">{error}</Alert>}
+          <div className="pushdown">
           <Form onSubmit={handleSubmit}>
             <Form.Group id="email">
-              <Form.Label>Email</Form.Label>
-              <Form.Control type="email" ref={emailRef} required />
+              <Form.Label>Email Address</Form.Label>
+              <Form.Control className="eminput" type="email" ref={emailRef} required />
             </Form.Group>
             <Form.Group id="password">
               <Form.Label>Password</Form.Label>
-              <Form.Control type="password" ref={passwordRef} required />
+              <Form.Control className="pwinput" type="password" ref={passwordRef} required />
             </Form.Group>
               <Button disabled={loading} className="w-100" type="submit">
               Log In <link to="userhome"></link>
             </Button>
-          
-          </Form>
-          <div className="w-100 text-center mt-3">
+            <div className="w-100 text-center mt-3">
             <Link to="/forgot-password">Forgot Password?</Link>
           </div>
+          </Form>
+          </div>
+          
         </Card.Body>
       </Card>
       <div className="w-100 text-center mt-2">
