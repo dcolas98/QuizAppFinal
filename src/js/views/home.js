@@ -54,6 +54,9 @@ export function Home() {
           
         </Card.Body>
       </Card>
+
+
+      
       <div className="w-100 text-center mt-2">
         Need an account? <Link to="/createaccount">Sign Up</Link>
       </div>
