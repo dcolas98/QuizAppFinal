@@ -1,11 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import img from "../../img/newlogo.png"
+
 
 export const Navbar = () => {
 	return (
 		<nav className="navbar navbar-light mb-3">
 			<Link to="/">
-				<span className="navbar-brand mb-0 h1">iKindaCode</span>
+            <img className="img1" src={img}/>
 			</Link>
 			<div className="ml-auto">
 			

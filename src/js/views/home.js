@@ -2,6 +2,8 @@ import React, { useRef, useState } from "react"
 import { Form, Button, Card, Alert } from "react-bootstrap"
 import { useAuth } from "/workspace/QuizAppFinal/src/contexts/AuthContext.js"
 import { Link, useHistory } from "react-router-dom"
+import img from "../../img/newlogo.png"
+import "../../styles/home.css"
 
 
 export function Home() {
@@ -29,37 +31,37 @@ export function Home() {
 
   return (
     <>
-    <div className="bg bg bg2 bg bg3 text-center mt-5"></div>
-      <Card className="login">
-        <Card.Body >
+    <div className="bg bg bg2 bg bg3 text-center"></div>
+      <Card style={{backgroundColor: "#ff000000"}}>
           {error && <Alert variant="danger">{error}</Alert>}
-          <div className="pushdown">
           <Form onSubmit={handleSubmit}>
+            <div className="superForm">
+            <img className="img1" src={img}/>
             <Form.Group id="email">
-              <Form.Label>Email Address</Form.Label>
-              <Form.Control className="eminput" type="email" ref={emailRef} required />
+              <Form.Label></Form.Label>
+              <input className="form-input" type="email" id="txt-input"  ref={emailRef} required placeholder="Enter Email" />
             </Form.Group>
             <Form.Group id="password">
-              <Form.Label>Password</Form.Label>
-              <Form.Control className="pwinput" type="password" ref={passwordRef} required />
+              <Form.Label></Form.Label>
+              <input className="form-input" type="password" id="txt-input" ref={passwordRef} required placeholder="Enter Password"/>
             </Form.Group>
-              <Button disabled={loading} className="w-100" type="submit">
+              <Button disabled={loading} className="log-in mt-5" type="submit">
               Log In <link to="userhome"></link>
             </Button>
             <div className="w-100 text-center mt-3">
             <Link to="/forgot-password">Forgot Password?</Link>
           </div>
+          <div className="w-100 text-center mt-2">
+        Need an account? <Link to="/createaccount">Sign Up</Link>
+      </div>
+      </div>
           </Form>
-          </div>
           
-        </Card.Body>
       </Card>
 
 
       
-      <div className="w-100 text-center mt-2">
-        Need an account? <Link to="/createaccount">Sign Up</Link>
-      </div>
+      
     </>
   )
 }
